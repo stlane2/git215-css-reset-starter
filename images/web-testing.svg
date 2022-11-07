@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100pt" height="100pt" version="1.1" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+ <g fill="none" stroke="#222222" stroke-miterlimit="10" stroke-width="2">
+  <path transform="scale(2)" d="m2 2h46v46h-46z"/>
+  <path transform="scale(2)" d="m2 10h46"/>
+  <path transform="scale(2)" d="m45 6h-2"/>
+  <path transform="scale(2)" d="m41 6h-2"/>
+  <path transform="scale(2)" d="m37 6h-2"/>
+  <path transform="scale(2)" d="m30 6h-24"/>
+  <path transform="scale(2)" d="m18.301 28.6 4.5 4.4004 8.8984-8.9004"/>
+  <path transform="scale(2)" d="m38 29c0 7.1797-5.8203 13-13 13s-13-5.8203-13-13 5.8203-13 13-13 13 5.8203 13 13"/>
+ </g>
+</svg>
