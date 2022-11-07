@@ -104,13 +104,13 @@ nav a{
     font-size: 1.75rem;
     font-weight: bold;
     background-color: var(--custom-orange);
-    color: var(--light-gray);
+    color: var(--dk-gray);
     border-radius: 0.5rem;
     box-shadow: 0 0 0 4px var(--custom-orange);
 }
 
 nav a:hover{
-    background-color: var(--light-gray);
+    background-color: var(--dk-gray);
     color: var(--custom-orange);
 }
 
