@@ -1,0 +1,366 @@
+/* ----- ROOT VARIABLES ----- */
+:root{
+    --deep-grn: #313732;
+    --teal: #059D8E;
+    --light-gray: #DEDEDE;
+    --custom-orange: #F28749;
+    --white: #fff;
+    --dk-gray: #222;
+
+    --med-gray-rgba: rgba(67, 74, 89, 0.75);
+    --lt-gray-rgba: rgba(242, 238, 235, 0.5);
+    --dk-green-rgba: rgba(49, 55, 50, .75);
+
+    --box-shadow-dark: -0.5rem 0.5rem 1rem var(--dk-gray);
+    --box-shadow-light: -0.5rem 0.5rem 0.5rem var(--lt-gray-rgba);
+    --box-shadow-dark-small: -0.25rem 0.25rem 0.25rem var(--med-gray-rgba);
+    --filter-shadow: drop-shadow(-0.15rem 0.15rem 0.25rem var(--dk-gray));
+
+    --heading-fonts: 'Roboto Mono', Consolas, 'SF Mono', monospace;
+    --body-fonts: 'Alegreya Sans', Arial, sans-serif;
+}
+
+/* ----- BODY STYLES ----- */
+body{
+    font-family: var(--body-fonts);
+    box-sizing: border-box;
+    line-height: 1.4;
+    background-color: var(--dk-gray);
+    color: var(--dk-gray);
+}
+
+/* ----- CONTAINER WIDTH STYLES ----- */
+header, main, footer{
+    width: 1280px;
+    margin: 0 auto;
+}
+
+/* ----- HEADER STYLES ----- */
+header{
+    background-image: url("images/keyboard.jpg");
+    background-clip: border-box;
+    background-position: center;
+}
+
+/* ----- HEADER DIV STYLES ----- */
+header div{
+    background-color: var(--dk-green-rgba);
+    padding: 3rem;
+}
+
+/* ----- LINK STYLES ----- */
+a{
+    display: block;
+    padding: 1rem;
+    text-decoration: none;
+    outline: 1px transparent solid;
+}
+
+a:focus-visible{
+    outline-offset: 1px; 
+    outline-color: var(--teal);
+    outline-width: medium;
+}
+
+/* ----- IMAGE STYLES ----- */
+img{
+    display: block;
+    width: 100%;
+}
+
+header img{
+    width: 600px;
+    margin: 0 auto;
+    box-shadow: none;
+    filter: grayscale(30%);
+}
+
+/* ----- HEADING STYLES ----- */
+h1, h2, h3{
+    font-family: var(--heading-fonts);
+    text-align: center;
+}
+
+h1{
+    color: var(--light-gray);
+}
+
+/* ----- NAVIGATION STYLES ----- */
+nav{
+    width: 800px;
+    margin: 0 auto;
+    padding-top: 1rem;
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-around;
+    padding-left: 0;
+    list-style-type: none;
+} 
+
+nav a{
+    font-family: var(--heading-fonts);
+    font-size: 1.75rem;
+    font-weight: bold;
+    background-color: var(--custom-orange);
+    color: var(--light-gray);
+    border-radius: 0.5rem;
+    box-shadow: 0 0 0 4px var(--custom-orange);
+}
+
+nav a:hover{
+    background-color: var(--light-gray);
+    color: var(--custom-orange);
+}
+
+/* ----- DECORATIVE BRACKET STYLES ----- */
+.bracket{
+    font-size: 1.5em;
+    vertical-align: sub;
+    display: inline;
+}
+
+/* ----- MAIN STYLES ----- */
+main{
+    background-color: var(--light-gray);
+    height: 2200px;
+}
+
+/* ----- TEAL BACKGROUND TRIANGLE STYLES ----- */
+.triangle{
+    background-color: var(--teal);
+    width: 1280px;
+    height: 700px;
+    filter: grayscale(50%);
+    position: relative;
+}
+
+#tri1{
+    clip-path: polygon(0% 0%, 100% 100%, 100% 0%);
+}
+
+#tri2{
+    top: -576px;
+    clip-path: polygon(100% 100%, 0% 0%, 0% 100%);
+    padding-top: 2rem;
+}
+
+#tri3{
+    top: -1431px;
+    clip-path: polygon(0% 0%, 0% 100%, 100% 0%);
+}
+
+/* ----- ABOUT SECTION STYLES ----- */
+#about{
+    position: relative;
+    z-index: 1;
+    top: -600px;
+}
+
+#about div{
+    width: 800px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 1rem;
+    align-items: center;
+    padding: 2rem;
+    background-color: var(--light-gray);
+    box-shadow: var(--box-shadow-dark);
+}
+
+#about img{
+    width: 300px;
+    margin: 0 auto;
+    grid-row: 1/3;
+    box-shadow: var(--box-shadow-dark);
+}
+
+#about h2{
+    font-size: 2rem;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    text-align: left;
+    margin: 0;
+}
+
+.orange{
+    color: var(--custom-orange);
+}
+
+#about .greeting{
+    padding: 1rem 0;
+    text-align: center;
+    display: block;
+    font-size: 3rem;
+}
+
+#about p{
+    font-size: 1.5rem;
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+/* ----- PARAGRAPH TEXT STYLES ----- */
+p{
+    max-width: 55ch;
+    margin: 0 auto;
+}
+
+header p{
+    font-size: 2rem;
+    text-align: center;
+    color: var(--light-gray);
+}
+
+/* ----- SKILLS SECTION STYLES ----- */
+#skills{
+    position: relative;
+    z-index: 1;
+    top: -1200px;
+}
+
+#skills .container{
+    width: 700px;
+    margin: 0 auto;
+    padding: 0.5rem 0 2rem 0;
+    background-color: var(--light-gray);
+    box-shadow: var(--box-shadow-dark);
+}
+
+#skills h2{
+    grid-column: 1/-1;
+    font-size: 2.5rem;
+}
+
+#skills section{
+    display: grid;
+    grid-template-columns: 1.5fr 3fr;
+    gap: 0 1rem;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.circle{
+    grid-row: 1/3;
+    width: 150px;
+    margin: 0 auto;
+    background-color: var(--teal);
+    padding: 1rem;
+    border-radius: 50%;
+    filter: var(--filter-shadow) grayscale(50%);
+}
+
+#skills img{
+    width: 80%;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+#skills h3{
+    font-size: 2rem;
+}
+
+#skills p{
+    font-size: 1.3rem;
+}
+
+
+/* ----- PORTFOLIO SECTION STYLES ----- */
+#portfolio{
+    position: relative;
+    top: -1785px;
+}
+
+#portfolio ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1rem;
+    width: 1100px;
+    margin: 1rem auto;
+}
+
+.card{
+    background-color: var(--dk-gray);
+    display: flex;
+    flex-direction: column;
+    box-shadow: var(--box-shadow-dark);
+    cursor: pointer;
+}
+
+.card .image{
+    height: 10rem;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 1rem));
+}
+
+.card .image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card .text{
+    order: 1;
+}
+
+.card a{
+    color: var(--light-gray);
+    cursor: pointer;
+    display: block;
+    position: static;
+}
+
+.card:hover, .card:focus-within{
+    box-shadow: var(--box-shadow-dark-small);
+}
+
+#portfolio h2{
+    grid-column: 1/-1;
+    font-size: 2.5rem;
+}
+
+/* ----- FOOTER STYLES ----- */
+footer{
+    position: relative;
+    background-color: var(--dk-gray);
+    color: var(--light-gray);
+    padding: 3rem 0;
+}
+
+footer section{
+    width: 340px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0 0.5rem;
+    padding: 1rem;
+}
+
+footer h2{
+    grid-column: 1/-1;
+}
+
+footer img{
+    background-color: var(--light-gray);
+    border-radius: 50%;
+    width: 75px;
+    height: 75px;
+    margin: 0 auto;
+}
+
+footer a{
+    padding: 0;
+    margin: 14px 6px;
+    border-radius: 50%;
+}
+
+footer a:hover{
+    padding: 14px 6px;
+    margin: 0;
+    background-color: var(--custom-orange);
+}
+
+footer p{
+    text-align: center;
+}
