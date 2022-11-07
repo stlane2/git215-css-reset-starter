@@ -7,7 +7,7 @@
     --white: #fff;
     --dk-gray: #222;
 
-    --med-gray-rgba: rgba(67, 74, 89, 0.75);
+    --med-gray-rgba: rgba(33, 58, 114, 0.75);
     --lt-gray-rgba: rgba(242, 238, 235, 0.5);
     --dk-green-rgba: rgba(49, 55, 50, .75);
 
@@ -104,13 +104,13 @@ nav a{
     font-size: 1.75rem;
     font-weight: bold;
     background-color: var(--custom-orange);
-    color: var(--dk-gray);
+    color: var(--light-gray);
     border-radius: 0.5rem;
     box-shadow: 0 0 0 4px var(--custom-orange);
 }
 
 nav a:hover{
-    background-color: var(--dk-gray);
+    background-color: var(--light-gray);
     color: var(--custom-orange);
 }
 
